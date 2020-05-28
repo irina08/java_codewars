@@ -56,3 +56,19 @@ public class EqualSidesOfAnArray {
     }
 }
 
+/*
+import java.util.Arrays;
+
+public class Kata {
+  public static int findEvenIndex(int[] arr) {
+    int left = 0;
+    int right = Arrays.stream(arr).sum();
+    for (int i=0; i<arr.length; i++){
+      right -= arr[i];
+      if (left == right) return i;
+      left += arr[i];
+    }
+    return -1;
+  }
+}
+ */
