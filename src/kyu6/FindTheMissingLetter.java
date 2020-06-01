@@ -25,3 +25,21 @@ public class FindTheMissingLetter
         return 0;
     }
 }
+
+//second Solution
+/*
+public class Kata
+{
+  public static char findMissingLetter(char[] array)
+  {
+    String str = "abcdefghijklmnopqrstuvwxyz";
+    str = str + str.toUpperCase();
+    int index = str.indexOf(array[0]);
+    for (int i = 0; i < array.length; i++) {
+      if (str.charAt(index + i) != array[i])
+          return (char) ((int) array[i] - 1);
+    }
+    return ' ';
+  }
+}
+ */
