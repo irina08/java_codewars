@@ -27,3 +27,12 @@ public class TripleTrouble
         return 0;
     }
 }
+
+//Second way
+/*
+    public static int TripleDouble(long num1, long num2)
+  {
+    String s = String.valueOf(num1) + " " + String.valueOf(num2);
+    return (s.matches(".*(\\d){3}.*\\s.*\\1{2}.*") ? 1 : 0);
+  }
+ */
