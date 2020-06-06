@@ -14,3 +14,18 @@ public class BackspacesInString {
         return s;
     }
 }
+
+//Second solution
+/* public class BackspacesInString {
+    public String cleanString(String s) {
+        String data = "";
+        for (int i =0;i < s.length();i++){
+            if(s.charAt(i) != '#')
+                data += s.charAt(i);
+            else if(data.length() > 0)
+                data= data.substring(0, data.length()-1);
+        }
+        return data;
+    }
+}
+ */
