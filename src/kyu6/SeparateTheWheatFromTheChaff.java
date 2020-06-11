@@ -77,3 +77,34 @@ public class SeparateTheWheatFromTheChaff{
     }
 }
 
+//Second way
+/*
+import java.util.Arrays;
+public class Kata {
+
+  public static long[] wheatFromChaff(long[] values) {
+
+    values = Arrays.copyOf(values, values.length);
+
+    int first = 0;
+    int last = values.length - 1;
+
+    while (first < last) {
+
+      if (values[first] > 0 && values[last] < 0) {
+        long t = values[last];
+        values[last] = values[first];
+        values[first] = t;
+        continue;
+      }
+
+      while (first < values.length && values[first] < 0)
+        ++first;
+
+      while (last >= 0 && values[last] > 0)
+        --last;
+    }
+    return values;
+  }
+}
+ */
