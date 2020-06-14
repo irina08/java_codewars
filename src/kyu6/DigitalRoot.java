@@ -9,6 +9,8 @@ Examples
 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
  */
 
+package kyu6;
+
 public class DigitalRoot {
     static int digital_root(int n) {
         if (n > 9) {

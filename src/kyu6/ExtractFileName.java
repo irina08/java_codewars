@@ -16,6 +16,8 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-0123456789
 The recommend way to solve it is using RegEx and specifically groups.
  */
 
+package kyu6;
+
 public class ExtractFileName {
     public static String extractFileName(String dirtyFileName) {
         return dirtyFileName.substring(dirtyFileName.indexOf('_') + 1, dirtyFileName.lastIndexOf('.'));

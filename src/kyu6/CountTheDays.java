@@ -9,6 +9,7 @@ If the event is today, return "Today is the day!"
 Else, return "x days"
  */
 
+package kyu6;
 import java.util.Date;
 
 public class CountTheDays {

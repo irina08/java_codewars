@@ -13,6 +13,8 @@ TripleDouble(12345, 12345) == 0
 TripleDouble(666789, 12345667) == 1
  */
 
+package kyu6;
+
 public class TripleTrouble
 {
     public static int TripleDouble(long num1, long num2)

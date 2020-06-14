@@ -6,6 +6,8 @@ NumberInExpandedForm
 NOTE: All numbers will be whole numbers greater than 0.
  */
 
+package kyu6;
+
 public class NumberInExpandedForm
 {
     public static String expandedForm(int num)

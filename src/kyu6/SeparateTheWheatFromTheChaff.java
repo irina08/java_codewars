@@ -38,6 +38,8 @@ Remeber, duplications are included when separating , that's why the number 1
 appeared twice at the end of the output.
  */
 
+package kyu6;
+
 public class SeparateTheWheatFromTheChaff{
 
     public static long[] wheatFromChaff(long[] values) {

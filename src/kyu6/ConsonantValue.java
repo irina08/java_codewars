@@ -11,6 +11,8 @@ For the word "strength", solve("strength") = 57
 and "ngth" = 14 + 7 + 20 + 8 = 49. The highest i
  */
 
+package kyu6;
+
 public class ConsonantValue {
     public static int solve(final String s) {
         int sum = 0;

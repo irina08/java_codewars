@@ -7,7 +7,7 @@ toCamelCase("the-stealth-warrior"); // returns "theStealthWarrior"
 toCamelCase("The_Stealth_Warrior"); // returns "TheStealthWarrior"
 */
 
-import java.lang.StringBuilder;
+package kyu6;
 
 class StringToCamelCase{
 

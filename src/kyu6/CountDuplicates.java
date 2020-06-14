@@ -12,6 +12,8 @@ Example
 "ABBA" -> 2 # 'A' and 'B' each occur twice
  */
 
+package kyu6;
+
 public class CountingDuplicates {
     public static int duplicateCount(String text) {
         StringBuilder sb = new StringBuilder();

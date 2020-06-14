@@ -12,6 +12,8 @@ Assertion messages may be unclear about what they display in some languages.
 If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!
  */
 
+package kyu6;
+
 public class DuplicateEncoder {
     static String encode(String word){
         word = word.toLowerCase();

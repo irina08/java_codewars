@@ -14,6 +14,8 @@ Line.Tickets(new int[] {25, 25, 50, 50, 100}) // => NO. Vasya will not have the
 right bills to give 75 dollars of change (you can't make two
  */
 
+package kyu6;
+
 public class VasyaClerk {
     public static String Tickets(int[] peopleInLine) {
         int d25 = 0;

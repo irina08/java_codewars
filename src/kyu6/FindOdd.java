@@ -2,6 +2,8 @@
 There will always be only one integer that appears an odd number of times.
  */
 
+package kyu6;
+
 public class FindOdd {
     public static int findIt(int[] a) {
         int count = 0;

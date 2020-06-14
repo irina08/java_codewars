@@ -9,6 +9,8 @@ Example
 sortArray([5, 3, 2, 8, 1, 4]) == [1, 3, 2, 8, 5, 4]
  */
 
+package kyu6;
+
 public class Kata {
     public static int[] sortArray(int[] array) {
         int length = array.length;
