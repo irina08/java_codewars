@@ -10,3 +10,30 @@ public class Consonants {
     }
 }
 
+//second solution
+/*
+public class Consonants {
+  public static int getCount(String str) {
+    int count = 0;
+
+    for (int i = 0, n = str.length(); i < n; ++i) {
+      char c = str.charAt(i);
+      switch (c) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case ' ':
+          break;
+        default:
+          if (Character.isLetter(c)) {
+            count++;
+          }
+          break;
+      }
+    }
+    return count;
+  }
+}
+ */
