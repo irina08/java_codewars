@@ -15,3 +15,16 @@ public class CountTheCharacters {
     }
 }
 
+//second solution
+/*
+public class CC {
+  public static int charCount(String str, char c) {
+    int counter = 0;
+    for (int i = 0; i < str.length(); i++) {
+      if (str.substring(i, i + 1).equalsIgnoreCase("" + c))
+        counter++;
+    }
+    return counter;
+  }
+}
+ */
