@@ -50,3 +50,20 @@ public class WhoWonTheElection {
         return null;
     }
 }
+
+//Second Solution
+/*
+import java.util.List;
+import java.util.HashSet;
+import java.util.Collections;
+
+public class BallotsCounter {
+    public static String getWinner(final List<String> listOfBallots) {
+      HashSet<String> unique = new HashSet<String>(listOfBallots);
+      for (String n : unique) {
+        if (Collections.frequency(listOfBallots, n) > listOfBallots.size()/2) return n;
+      }
+      return null;
+    }
+}
+ */
