@@ -74,4 +74,24 @@ public class BankAccount {
     }
 }
 
+//second solution
+/*
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class BankAccount {
+     public static long parse(final String acctNbr) {
+        Map<String, Long> map = new HashMap<>();
+        map.put(" _ | ||_|", 0L); map.put("     |  |", 1L); map.put(" _  _||_ ", 2L);
+        map.put(" _  _| _|", 3L); map.put("   |_|  |", 4L); map.put(" _ |_  _|", 5L);
+        map.put(" _ |_ |_|", 6L); map.put(" _   |  |", 7L); map.put(" _ |_||_|", 8L);
+        map.put(" _ |_| _|", 9L);
+        String result = "";
+        String[][] arr = Arrays.stream(acctNbr.split("\n")).map(i -> i.split("(?<=\\G.{3})")).toArray(String[][]::new);
+        for (int i = 0; i < arr[0].length; i++) result += map.get(arr[0][i] + arr[1][i] + arr[2][i]);
+        return Long.parseLong(result);
+    }
+}
+ */
 
