@@ -59,3 +59,46 @@ public class Rainfall {
         return null;
     }
 }
+
+//second solution with Streams
+/*
+import static java.util.stream.Collectors.averagingDouble;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Rainfall {
+
+  public static double mean(String town, String strng) {
+    return parseTemp(town, strng).stream()
+        .collect(averagingDouble(n -> n));
+  }
+
+  public static double variance(String town, String strng) {
+    double mean = mean(town, strng);
+    if (mean == -1.0) return -1.0;
+
+    return parseTemp(town, strng).stream()
+        .collect(averagingDouble(n -> (n - mean) * (n - mean)));
+
+  }
+
+  private static List<Double> parseTemp(String town, String strng) {
+    List<Double> temps = new ArrayList<>();
+    for (String line : strng.split("\\n")) {
+      String[] data = line.split(":");
+      if (town.equals(data[0])) {
+        for (String weather : data[1].split(",")) {
+          String[] temp = weather.split("\\s");
+          temps.add(Double.parseDouble(temp[1]));
+        }
+        break;
+      }
+    }
+
+    if (temps.isEmpty()) temps.add(-1.0);
+
+    return temps;
+  }
+}
+ */
